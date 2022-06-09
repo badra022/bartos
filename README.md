@@ -19,7 +19,7 @@ tasks that send data into the message queue are higher priority than the tasks t
 
 delay API can move the task from the ready queue to the suspending queue and wake it up again after specific number of ticks. this gives lower priority tasks more chance to run until the high priority tasks wake up from suspension.
 
-This system is designed for 8MHZ system clock, you can configure it to use any other values of frequencies using RCC configurations beside the ```CLOCK_SOURCE``` and ```SYSTEM_TICKS_PER_SEC``` in ```bartos_config.h``` file.
+This system is configured for 16MHZ system clock, you can configure it to use any other values of frequencies using RCC configurations beside the ```CLOCK_SOURCE``` and ```SYSTEM_TICKS_PER_SEC``` in ```bartos_config.h``` file.
 
 ## APIs
 
